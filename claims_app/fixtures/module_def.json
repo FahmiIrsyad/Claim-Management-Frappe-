@@ -1,0 +1,13 @@
+[
+ {
+  "app_name": "frappe",
+  "custom": 1,
+  "docstatus": 0,
+  "doctype": "Module Def",
+  "modified": "2026-03-09 00:05:20.441869",
+  "module_name": "Claims Management",
+  "name": "Claims Management",
+  "package": null,
+  "restrict_to_domain": null
+ }
+]

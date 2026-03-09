@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Employee Claim",
+  "enabled": 1,
+  "modified": "2026-03-09 01:08:32.422645",
+  "module": null,
+  "name": "Employee Claim Receipt Rule",
+  "script": "frappe.ui.form.on(\"Employee Claim\", {\r\n  claim_type(frm) {\r\n    const needs_receipt = [\"Medical\", \"Travel\"].includes(frm.doc.claim_type);\r\n    frm.toggle_display(\"receipt\", needs_receipt);\r\n    if (!needs_receipt) {\r\n      frm.set_value(\"receipt\", \"\");\r\n    }\r\n  },\r\n  refresh(frm) {\r\n    frm.trigger(\"claim_type\");\r\n  }\r\n});\r\n",
+  "view": "Form"
+ }
+]
