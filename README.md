@@ -30,6 +30,13 @@ This app demonstrates practical Frappe development beyond basic UI configuration
 - client script to validate requested check-in and check-out times
 - server validation to require a reason and prevent invalid time ranges
 
+### Recruitment Pipeline
+
+- custom `Recruitment Pipeline` DocType
+- workflow to move candidates from application to hiring or rejection
+- client script to update overall status from recruitment stage
+- server validation for required candidate details and basic email format
+
 ## Stack
 
 - Frappe Framework
@@ -44,15 +51,19 @@ This app demonstrates practical Frappe development beyond basic UI configuration
 - `DocType`: `Employee Claim`
 - `DocType`: `Leave Request`
 - `DocType`: `Attendance Adjustment`
+- `DocType`: `Recruitment Pipeline`
 - `Workflow`: employee claim approval flow
 - `Workflow`: leave request approval flow
 - `Workflow`: attendance adjustment approval flow
+- `Workflow`: recruitment pipeline stage flow
 - `Client Script`: employee claim receipt rule
 - `Client Script`: leave request day calculation
 - `Client Script`: attendance time validation
+- `Client Script`: recruitment status update
 - `Server Script`: employee claim validation
 - `Server Script`: leave request validation
 - `Server Script`: attendance adjustment validation
+- `Server Script`: recruitment validation
 
 ## Local Setup
 
@@ -81,4 +92,4 @@ This project shows:
 - low-code setup with DocTypes and workflows
 - custom frontend behavior with Frappe client scripts
 - backend business rules with server-side validation
-- HR-oriented product thinking relevant to claims, leave, and attendance flows
+- HR-oriented product thinking relevant to claims, leave, attendance, and hiring flows
