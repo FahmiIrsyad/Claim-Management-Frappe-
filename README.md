@@ -23,6 +23,13 @@ This app demonstrates practical Frappe development beyond basic UI configuration
 - client script to auto-calculate total leave days from date range
 - server validation to prevent invalid date ranges and non-positive day counts
 
+### Attendance Adjustment
+
+- custom `Attendance Adjustment` DocType
+- approval workflow for attendance correction requests
+- client script to validate requested check-in and check-out times
+- server validation to require a reason and prevent invalid time ranges
+
 ## Stack
 
 - Frappe Framework
@@ -36,12 +43,16 @@ This app demonstrates practical Frappe development beyond basic UI configuration
 - `Module Def`: `Claims Management`
 - `DocType`: `Employee Claim`
 - `DocType`: `Leave Request`
+- `DocType`: `Attendance Adjustment`
 - `Workflow`: employee claim approval flow
 - `Workflow`: leave request approval flow
+- `Workflow`: attendance adjustment approval flow
 - `Client Script`: employee claim receipt rule
 - `Client Script`: leave request day calculation
+- `Client Script`: attendance time validation
 - `Server Script`: employee claim validation
 - `Server Script`: leave request validation
+- `Server Script`: attendance adjustment validation
 
 ## Local Setup
 
@@ -70,4 +81,4 @@ This project shows:
 - low-code setup with DocTypes and workflows
 - custom frontend behavior with Frappe client scripts
 - backend business rules with server-side validation
-- HR-oriented product thinking relevant to leave and claim management
+- HR-oriented product thinking relevant to claims, leave, and attendance flows
